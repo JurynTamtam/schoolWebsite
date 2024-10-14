@@ -1,0 +1,207 @@
+<style>
+        /* Reset some default browser styles */
+        body, h1, h2, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* Set a background image */
+        body {
+            background-image: url('7-Story Building.jpg');
+            background-size: cover;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #001f3f; /* Navy Blue */
+            color: #ffffff; /* White */
+            padding: 20px;
+            padding-bottom:10px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Style the logo */
+        header img {
+            margin-right: 20px;
+            width: 70px;
+            height: 70px;
+        }
+
+        /* Style the navigation */
+        nav {
+            text-align: right;
+            background-color: #001f3f; /* Navy Blue */
+            padding: 10px;
+            padding-right: 60px;
+
+        }
+
+        nav ul {
+            list-style: none;
+
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff; /* White */
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FFD700; /* Gold */
+        }
+
+        .container img  {
+            max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+            max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+        }
+
+        /* Style the main content container */
+        .container {
+            background-color: #f2f2f2; /* Light Gray */
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        /* Style the left container (Mission and Vision) */
+        .left-container {
+            flex: 1; /* Take up half the width */
+            padding: 20px; 
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-right: 2px solid #001f3f; /* Navy Blue */
+            background-image: url('https://energy-poverty.ec.europa.eu/sites/default/files/styles/oe_theme_full_width/public/2021-09/EPAH%20banner_1108.png?itok=Om7hbDw7');
+            background-size: cover; /* Adjust as needed */
+              background-repeat: no-repeat; /* Prevent repeating the image */
+              background-position: center center;
+                }
+
+            .left-container1 {
+            flex: 1; /* Take up half the width */
+            padding: 20px; 
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-right: 2px solid #001f3f; /* Navy Blue */
+            background-image: url('https://rare-gallery.com/thumbnail/1338831-WhiteAbstract-Hexagon-4k-Ultra-HD-Wallpaper.png');
+              background-size: cover; /* Adjust as needed */
+              background-position: center center;
+                }
+
+        /* Style the right container (Carousel) */
+        .right-container {
+            flex: 1; /* Take up half the width */
+            padding: 20px;
+            padding-top: 5px;
+            background-image: url('https://energy-poverty.ec.europa.eu/sites/default/files/styles/oe_theme_full_width/public/2021-09/EPAH%20banner_1108.png?itok=Om7hbDw7');
+            background-size: cover; /* Adjust as needed */
+              background-repeat: no-repeat; /* Prevent repeating the image */
+              background-position: center right;
+
+        }
+         .right-container1 {
+            flex: 1; /* Take up half the width */
+            padding: 20px;
+            padding-top: 5px;
+             background-image: url('https://rare-gallery.com/thumbnail/1338831-WhiteAbstract-Hexagon-4k-Ultra-HD-Wallpaper.png');
+              background-size: cover; /* Adjust as needed */
+              background-repeat: no-repeat; /* Prevent repeating the image */
+              background-position: right center;
+                }
+        }
+
+        /* Style the carousel container */
+        .carousel-container {
+            max-width: 100%;
+            overflow: hidden;
+            border: 2px solid #001f3f; /* Navy Blue */
+            border-radius: 10px;
+        }
+
+        /* Style the carousel content */
+        .carousel-content {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-content #frontImage {
+            width: 90%;
+            height: auto;
+            padding-left: 150px;
+            padding-right: 100px;
+            padding-bottom: 20px;
+
+        }
+
+        /* Style the carousel buttons */
+        .carousel-button1 {
+            float: left;
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #FFD700; /* Gold */
+            color: #001f3f; /* Navy Blue */
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        .carousel-button2 {
+            float: right;
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #FFD700; /* Gold */
+            color: #001f3f; /* Navy Blue */
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        .carousel-button1:hover, .carousel-button2:hover {
+            color: #FFD700; /* Gold */
+            background-color: seagreen;
+        }
+        footer div{
+            background-image: url('https://energy-poverty.ec.europa.eu/sites/default/files/styles/oe_theme_full_width/public/2021-09/EPAH%20banner_1108.png?itok=Om7hbDw7');
+            background-size: cover; /* Adjust as needed */
+              background-repeat: no-repeat; /* Prevent repeating the image */
+              background-position: center center;
+        }
+
+
+        /* Style the footer */
+        footer {
+            background-color: #001f3f; /* Navy Blue */
+            color:
+            text-align: center;
+            padding: 10px;
+        }
+        .texth3{
+            margin-left: 400px;
+        }
+        a{
+            text-decoration: none;
+        }
+        i{
+            font-size: 16px;
+            color: blue;
+        }
+
+        .small-image-right {
+            float: right; /* Float the image to the right */
+            margin-left: 5px; /* Add some spacing to the left of the image */
+            width: 200px; /* Set the width of the image */
+        }
+    </style>

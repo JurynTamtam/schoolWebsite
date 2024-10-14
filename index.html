@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>First Activity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://ispsc.edu.ph/file-manager/images/ispsc_logo_small.png" alt="School Logo">
+        <h1>Ilocos Sur Polytechnic State College</h1>
+        <h3 class="texth3">Tagudin Campus, Tagudin Ilocos Sur </h3>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Admission.html">Admission</a></li>
+           <li id="scrollToFooter"><a>Contact</a></li>
+        </ul>
+    </nav>
+        <div class="container">
+        <div class="left-container">
+            <h2>Mission and Vision of ISPSC</h2>
+            <div>
+                 <h3>Vision</h3>
+            <p><i>
+              A vibrant and nurturing Polytechnic Service College for transforming lives and communities.
+           </i> </p>
+            <h3>
+               
+              Mission
+            </h3>
+            <p><i>
+              To improve the lives of people and communities through quality instruction, innovations, productivity initiatives, environment and industry-feasible technologies, resource mobilization and transformation outreach programs and services.
+            </i></p>
+            </div>
+
+            <div>
+                
+            <h3>Core values</h3>
+            <p>
+              <b>P</b>roductivity<br>
+              <b>R</b>esiliency<br>
+              <b>A</b>ccountability<br>
+              <b>I</b>ngenuity<br>
+              <b>S</b>ynergy<br>
+              <b>E</b>xcellence 
+            </p>
+            <img src="https://previews.123rf.com/images/milkos/milkos2006/milkos200603081/149921164-business-strategy-concept-simple-visualization-for-mission-vision-on-white-background-easy-to-use.jpg" class="small-image-right">
+
+            <h3>Philosophy</h3>
+            <p>
+              Flourish ISPSC,<br>
+              Deliver Quality Education and Services<br>
+              And Launch Academic Excellence 
+            </p>
+
+            </div>
+   
+
+        </div>
+        <div class="right-container">
+            <div class="carousel-container">
+                <div class="carousel-content">                    
+                    <img src="https://static.educativ.net/monthly_2020_11/14590388_1457250320958139_7052609425270707500_n.png.34559fb939ae5b6c21f98c424be5cf8b.png" alt="Image 4: ISPC LOGO" id="frontImage" style="width: 50%;">
+                    <img src="3-Story Building-LHS.jpg" alt="Image 1">
+                    <img src="7-Story Building.jpg" alt="Image 2">
+                    <img src="IMG_20230622_131359.png" alt="Image 3">
+
+                </div>
+            </div>
+            <button class="carousel-button1" onclick="prevSlide()">Previous</button>
+            <button class="carousel-button2" onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+     <footer id="footer">
+        <div class="container">
+            <h2>Contact Information</h2><hr>
+            <p>Address: Quirino Tagudin Ilocos Sur</p> <hr>
+            <p>Email: registrarispsc@yahoo.com</p><hr>
+            <p>FB: <a href="https://www.facebook.com/ISPSCRegistrarsOffice/" target="_blank">Registrar's Office Page</a></p>
+            </div>
+        </div>
+    </footer>
+
+       <script>
+         let slideIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.carousel-content img');
+            if (index >= slides.length) {
+                slideIndex = 0;
+            } else if (index < 0) {
+                slideIndex = slides.length - 1;
+            }
+
+            slides.forEach((slide, i) => {
+                if (i === slideIndex) {
+                    slide.style.display = 'block';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        }
+
+        function prevSlide() {
+            slideIndex--;
+            showSlide(slideIndex);
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            showSlide(slideIndex);
+        }
+
+        // Show the initial slide
+        showSlide(slideIndex);
+
+
+    // Function to scroll to the footer when the button is clicked
+    document.getElementById('scrollToFooter').addEventListener('click', function() {
+        const footer = document.getElementById('footer');
+        
+        // Use smooth scrolling behavior
+        footer.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    </script>
+</body>
+</html>
